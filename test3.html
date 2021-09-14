@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Bai3: Câu lệnh nhận giá trị từ ô input:
+    // <input type="text" id="..." >
+</script>
+<p>Nhập a:</p>
+<input id="a" type="text" oninput="tinhs()">
+<p>Nhập b:</p>
+<input type="text" id="b" oninput="tinhs()">
+<h1 id="s" ></h1>
+<script>
+    function tinhs() {
+        let a = document.getElementById('a').value;
+        let b = document.getElementById('b').value;
+        document.getElementById('s').innerHTML = a + b;
+    }
+</script>
+</body>
+</html>
